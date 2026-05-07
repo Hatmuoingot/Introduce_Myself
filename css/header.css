@@ -1,0 +1,87 @@
+﻿/* Desktop Menu */
+.macos-menu-bar {
+    position: fixed; top: 0; left: 0; width: 100%; height: 56px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; font-size: 13px; z-index: 100;
+    background: rgba(8, 16, 12, 0.90);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0 0 28px 28px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+
+.menu-left { display: flex; align-items: center; gap: 18px; }
+.apple-icon { font-size: 18px; }
+.app-name { font-weight: 600; }
+.nav-item {
+    color: var(--text-secondary);
+    display: inline-flex; align-items: center;
+    padding: 10px 16px; border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+.nav-item:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-1px);
+}
+.time-display { font-variant-numeric: tabular-nums; color: var(--text-secondary); }
+
+/* Mobile Header */
+.ios-mobile-header {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    background: rgba(8, 16, 12, 0.92);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0 0 28px 28px;
+}
+
+.header-content {
+    display: flex; justify-content: space-between; align-items: center;
+    height: 56px; padding: 0 20px;
+}
+
+.brand-name { font-weight: 600; font-size: 18px; }
+.menu-trigger {
+    width: 44px; height: 44px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    padding: 0; cursor: pointer;
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+.menu-trigger:hover { transform: scale(1.03); background: rgba(255, 255, 255, 0.12); }
+.burger-lines, .burger-lines::before, .burger-lines::after {
+    display: block; width: 18px; height: 2px; background: var(--text-primary);
+    transition: 0.3s ease; position: relative;
+}
+.burger-lines::before { content: ''; position: absolute; top: -7px; left: 0; }
+.burger-lines::after { content: ''; position: absolute; top: 7px; left: 0; }
+.menu-trigger.active .burger-lines { background: transparent; }
+.menu-trigger.active .burger-lines::before { top: 0; transform: rotate(45deg); }
+.menu-trigger.active .burger-lines::after { top: 0; transform: rotate(-45deg); }
+
+/* Mobile Dropdown Menu */
+.mobile-glass-menu {
+    position: absolute; top: 56px; left: 12px; right: 12px;
+    background: rgba(7, 15, 11, 0.95);
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.32);
+    overflow: hidden;
+    flex-direction: column;
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 0.4s cubic-bezier(0.86, 0, 0.07, 1), opacity 0.3s ease;
+    opacity: 0;
+}
+
+.mobile-glass-menu.is-visible { clip-path: inset(0 0 0 0); display: flex; opacity: 1; }
+.mobile-nav-item {
+    padding: 18px 22px; font-size: 18px; font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.mobile-nav-item:last-child { border-bottom: none; }

@@ -1,0 +1,38 @@
+/* photo.css */
+.social-stack-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px; margin-top: 50px;
+}
+
+.stack-wrapper { cursor: pointer; perspective: 1200px; }
+
+.album-stack-visual { position: relative; aspect-ratio: 1; width: 100%; margin-bottom: 20px; }
+
+.stack-layer {
+    position: absolute; width: 100%; height: 100%; border-radius: 20px;
+    background: var(--bg-base); border: 1px solid var(--glass-highlight);
+    overflow: hidden; transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.6s ease;
+    will-change: transform; backface-visibility: hidden;
+}
+
+.stack-layer img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9); }
+
+.layer-1 { z-index: 3; transform: translateY(0) scale(1) translateZ(0); }
+.layer-2 { z-index: 2; transform: translateY(-12px) scale(0.94) translateZ(-20px); filter: brightness(0.7); }
+.layer-3 { z-index: 1; transform: translateY(-24px) scale(0.88) translateZ(-40px); filter: brightness(0.5); }
+
+.platform-icon {
+    position: absolute; bottom: 16px; right: 16px; width: 32px; height: 32px;
+    background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    backdrop-filter: blur(10px); color: white; font-weight: bold;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .stack-wrapper:hover .layer-1 { transform: translateY(-10px) scale(1.02) translateZ(0); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+    .stack-wrapper:hover .layer-2 { transform: translateY(-26px) scale(0.96) translateZ(-20px); }
+    .stack-wrapper:hover .layer-3 { transform: translateY(-42px) scale(0.90) translateZ(-40px); }
+}
+
+.album-name { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.album-details { font-size: 13px; color: var(--text-secondary); }

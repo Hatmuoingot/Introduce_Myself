@@ -1,0 +1,18 @@
+:root {
+    /* Color Palette */
+    --bg-base: #060d09;
+    --bg-surface: rgba(10, 24, 15, 0.4);
+    --accent-green: #34d399;
+    --accent-glow: rgba(52, 211, 153, 0.3);
+    
+    /* Liquid Glass Optics */
+    --glass-bg: rgba(255, 255, 255, 0.02);
+    --glass-border: rgba(255, 255, 255, 0.06);
+    --glass-highlight: rgba(255, 255, 255, 0.1);
+    --glass-blur: blur(40px) saturate(180%);
+    --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    
+    /* Typography */
+    --text-primary: #e2e8e4;
+    --text-secondary: #8fa396;
+}

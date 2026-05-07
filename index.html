@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Portfolio | Nguyễn Thanh Hải</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="/css/variable.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/photo.css">
+    <link rel="stylesheet" href="/css/preview.css">
+</head>
+<body>
+
+    <div class="ambient-background"></div>
+
+    <header class="macos-menu-bar hide-on-mobile">
+        <div class="menu-left">
+            <span class="apple-icon"></span>
+            <nav class="nav-links">
+                <a href="#hero" class="nav-item">Giới thiệu</a>
+                <a href="#cyber" class="nav-item">An ninh mạng</a>
+                <a href="#photo" class="nav-item">Nhiếp ảnh</a>
+                <a href="#contact" class="nav-item">Liên hệ</a>
+            </nav>
+        </div>
+        <div class="menu-right">
+            <span class="time-display" id="clock">13:37</span>
+        </div>
+    </header>
+
+    <header class="ios-mobile-header hide-on-desktop">
+        <div class="header-content">
+            <span class="brand-name">Portfolio</span>
+            <button class="menu-trigger" id="mobile-menu-btn" aria-label="Mở menu">
+                <div class="burger-lines"></div>
+            </button>
+        </div>
+        <nav class="mobile-glass-menu" id="mobile-nav">
+            <a href="#hero" class="mobile-nav-item">Trang chủ</a>
+            <a href="#cyber" class="mobile-nav-item">Ngành học & Công Việc</a>
+            <a href="#photo" class="mobile-nav-item">Nhiếp ảnh</a>
+            <a href="#contact" class="mobile-nav-item">Liên hệ</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-glass-card">
+            <span class="hero-greeting">Xin chào, tôi là</span>
+            <h1 class="hero-name">Nguyễn Thanh Hải</h1>
+            <div class="hero-description">
+                <span>Sinh viên An ninh mạng</span>
+                <span class="divider-dot">•</span>
+                <span>Nhiếp ảnh bán chuyên</span>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="mouse-icon"></div>
+            <span>Cuộn để khám phá</span>
+        </div>
+    </section>
+
+    <main class="workspace">
+        <div class="glass-window">
+            <div class="window-titlebar">
+                <div class="window-controls">
+                    <span class="dot close"></span>
+                    <span class="dot minimize"></span>
+                    <span class="dot maximize"></span>
+                </div>
+                <div class="window-title">about_me.md</div>
+            </div>
+
+            <div class="window-content-scroll">
+                <section id="cyber" class="content-block">
+                    <div class="typography-header">
+                        <span class="accent-badge">Lộ trình chuyên môn</span>
+                        <h2 class="section-title">An ninh mạng & Phòng thủ số</h2>
+                        <p class="section-subtitle">
+                            Tôi là một sinh viên an ninh mạng với niềm đam mê về ethical hacking và bảo vệ số. Tôi có kinh nghiệm thực tế trong kiểm thử xâm nhập, đánh giá lỗ hổng và bảo mật mạng. Mục tiêu của tôi là bảo vệ tài sản số và đóng góp vào môi trường trực tuyến an toàn hơn.
+                        </p>
+                    </div>
+                </section>
+
+                <hr class="elegant-divider">
+
+                <section id="photo" class="content-block">
+                    <div class="typography-header">
+                        <span class="accent-badge">Ống kính sáng tạo</span>
+                        <h2 class="section-title">Nhiếp ảnh & Khoảnh khắc</h2>
+                        <p class="section-subtitle">
+                            Ngắm nhìn thế giới qua đôi mắt và lưu giữ từng kỉ niệm ...
+                        </p>
+                    </div>
+
+                    <div class="social-stack-grid">
+                        <div class="stack-wrapper" onclick="openPreview('facebook')">
+                            <div class="album-stack-visual">
+                                <div class="stack-layer layer-3"></div>
+                                <div class="stack-layer layer-2"></div>
+                                <div class="stack-layer layer-1">
+                                    <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/646042858_2925813187608595_7360797779767465871_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFlk5dbajr1vbF3qIeLFSHJkBnOqiaxM0eQGc6qJrEzR0md8mAp1hAc6nkYFCj-egrQDpnOFkDI55b41b9ED2lY&_nc_ohc=SkVjPoMjb0sQ7kNvwEc5D0X&_nc_oc=Ado0zEXu99BQ5vr_LfjErsRDEJmvTbx7vTN3O3mO08zvtWc-x_XpWRZO6nO8U_pvkeg&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=s_7neaB--5TiVkKlcYpZTA&_nc_ss=7b2a8&oh=00_Af5m9Uswt_xQ8IH2s-TcFf9I85gwitvNDIXMSEuumlFiJw&oe=6A021123" alt="Hồ sơ Facebook">
+                                    <div class="platform-icon fb">f</div>
+                                </div>
+                            </div>
+                            <div class="album-meta">
+                                <h3 class="album-name">Một vài bức ảnh từ "mẫu quen" ;)))</h3>
+                                <p class="album-details">Chân dung</p>
+                            </div>
+                        </div>
+
+                        <div class="stack-wrapper" onclick="openPreview('tiktok')">
+                            <div class="album-stack-visual">
+                                <div class="stack-layer layer-3"></div>
+                                <div class="stack-layer layer-2"></div>
+                                <div class="stack-layer layer-1">
+                                    <img src="images/tiktok-cover.jpg" alt="Hình ảnh TikTok">
+                                    <div class="platform-icon tt">d</div>
+                                </div>
+                            </div>
+                            <div class="album-meta">
+                                <h3 class="album-name">TikTok</h3>
+                                <p class="album-details">Post mình chụp được nhiều view nhất</p>
+                            </div>
+                        </div>
+
+                        <div class="stack-wrapper" onclick="openPreview('freestyle')">
+                            <div class="album-stack-visual">
+                                <div class="stack-layer layer-3"></div>
+                                <div class="stack-layer layer-2"></div>
+                                <div class="stack-layer layer-1">
+                                    <img src="images/misc-cover.jpg" alt="Nhiếp ảnh tự do">
+                                    <div class="platform-icon misc">📷</div>
+                                </div>
+                            </div>
+                            <div class="album-meta">
+                                <h3 class="album-name">Khoảnh khắc tự do</h3>
+                                <p class="album-details">Khoảnh khắc tự do</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div id="preview-overlay" class="preview-overlay" onclick="closePreview()">
+        <div class="preview-window" onclick="event.stopPropagation()">
+            <button class="close-preview" onclick="closePreview()">✕</button>
+            <div class="preview-body">
+                <div class="preview-image-container">
+                    <img src="" id="target-preview-img" alt="Xem trước lớn">
+                </div>
+                <div class="preview-info-panel">
+                    <h2 id="target-title">Tên Album</h2>
+                    <p id="target-desc">Mô tả chi tiết.</p>
+                    <a href="#" id="target-link" target="_blank" class="visit-social-btn">
+                        Mở liên kết <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Logic menu di động
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            mobileNav.classList.toggle('is-visible');
+        });
+
+        // Data cho các Album
+        const socialData = {
+            'facebook': {
+                title: 'Facebook',
+                desc: 'Bộ ảnh mới nhất của mình chụp',
+                img: 'https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/645946785_2925813154275265_128664461627562704_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFN-sU-AuVzFkzQAoLhDcSMbzg0tt51DJ9vODS23nUMn1MX12OmEQsA70_lM1X6Gc3hCVVbR6FpMc111dbJyNF7&_nc_ohc=feyj7USeB-8Q7kNvwFInX03&_nc_oc=AdpR-4iFj55UtxQmGlCZZE65tfeZH13ke14DuWDuIfCBLv8bXMYVgixvj0cvDvh51Is&_nc_zt=23&_nc_ht=scontent.fhan14-2.fna&_nc_gid=ks0XrOxkActyXMRM3j4n8w&_nc_ss=7b2a8&oh=00_Af762Nb_ONs93xebzxZktDLaKQgnyF7cBcyVtc3KU85wyw&oe=6A021B74',
+                link: 'https://www.facebook.com/duyennguyen157/posts/pfbid0y2exanViRzGWhNn5spGT9BqJpRNeSzwBq2Azqa9AXrm3BrUTQMxsioWTMUwXvS9Jl'
+            },
+            'tiktok': {
+                title: 'TikTok',
+                desc: 'Cũng không ngờ là mình có một vài bức ảnh được nhiều view trên TikTok, đây là một trong số đó.',
+                img: 'images/tiktok-preview.jpg',
+                link: 'https://www.tiktok.com/@tnll2911204/photo/7554756436568362258?lang=vi-VN'
+            },
+            'freestyle': {
+                title: 'Khoảnh khắc tự do',
+                desc: 'Một bộ sưu tập tự do, không thống nhất về chủ đề nhưng đầy ắp những góc nhìn ngẫu hứng của tôi.',
+                img: 'images/misc-preview.jpg',
+                link: 'https://drive.google.com/your-folder-link' // Đây là nơi bạn để link Drive nếu muốn khách xem full kho ảnh
+            }
+        };
+
+        function openPreview(platform) {
+            const data = socialData[platform];
+            document.getElementById('target-title').innerText = data.title;
+            document.getElementById('target-desc').innerText = data.desc;
+            document.getElementById('target-preview-img').src = data.img;
+            document.getElementById('target-link').href = data.link;
+            
+            const overlay = document.getElementById('preview-overlay');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePreview() {
+            const overlay = document.getElementById('preview-overlay');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('clock').innerText = now.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
