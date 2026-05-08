@@ -65,6 +65,10 @@ a { text-decoration: none; color: inherit; }
 
 /* Mobile Base Adjustments */
 @media (max-width: 768px) {
+    .ambient-background {
+        filter: blur(30px); /* Reduced for mobile performance */
+        opacity: 0.8;
+    }
     .hide-on-mobile { display: none !important; }
     .hide-on-desktop { display: block; }
     .workspace { padding: 80px 10px 50px; }
