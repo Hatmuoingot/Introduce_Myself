@@ -25,7 +25,7 @@ const socialData = {
     'facebook': {
         title: 'Facebook',
         desc: 'Bộ ảnh mới nhất của mình chụp',
-        img: './images/fb_preview.jpg',
+        img: 'https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/645946785_2925813154275265_128664461627562704_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFN-sU-AuVzFkzQAoLhDcSMbzg0tt51DJ9vODS23nUMn1MX12OmEQsA70_lM1X6Gc3hCVVbR6FpMc111dbJyNF7&_nc_ohc=feyj7USeB-8Q7kNvwFInX03&_nc_oc=AdpR-4iFj55UtxQmGlCZZE65tfeZH13ke14DuWDuIfCBLv8bXMYVgixvj0cvDvh51Is&_nc_zt=23&_nc_ht=scontent.fhan14-2.fna&_nc_gid=G-QUs9OEFqVSG2-qtPi2BA&_nc_ss=7b2a8&oh=00_Af7YlRPw0nSFu6xlMAiYFfV7UOV4E74JioxS5Ed6r0iNTQ&oe=6A0334B4',
         link: 'https://www.facebook.com/duyennguyen157/posts/pfbid0y2exanViRzGWhNn5spGT9BqJpRNeSzwBq2Azqa9AXrm3BrUTQMxsioWTMUwXvS9Jl'
     },
     'tiktok': {

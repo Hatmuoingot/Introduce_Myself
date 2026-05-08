@@ -178,16 +178,16 @@
 /* Vinyl Tooltip Message fixed for Top Right position */
 .vinyl-tooltip {
     position: absolute;
-    right: 80px;
+    right: 85px;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(15, 25, 20, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--accent-green);
+    background: rgba(15, 25, 20, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(52, 211, 153, 0.3);
     color: var(--accent-green);
-    padding: 8px 16px;
-    border-radius: 12px 12px 0 12px;
+    padding: 10px 18px;
+    border-radius: 20px 20px 2px 20px;
     font-size: 13px;
     font-weight: 500;
     white-space: nowrap;
