@@ -247,14 +247,28 @@
 
         function openPreview(platform) {
             const data = socialData[platform];
+            const imgElement = document.getElementById('target-preview-img');
+            
+            // 1. Cập nhật các thông tin văn bản ngay lập tức
             document.getElementById('target-title').innerText = data.title;
             document.getElementById('target-desc').innerText = data.desc;
-            document.getElementById('target-preview-img').src = data.img;
             document.getElementById('target-link').href = data.link;
             
+            // 2. Hạ độ mờ (opacity) về 0 ngay lập tức để giấu ảnh của album cũ
+            imgElement.style.opacity = '0';
+            
+            // 3. Mở cửa sổ Overlay lên trước để người dùng thấy thông tin
             const overlay = document.getElementById('preview-overlay');
             overlay.classList.add('active');
             document.body.style.overflow = 'hidden';
+
+            // 4. Lắng nghe sự kiện: Chỉ khi nào ảnh mới TẢI XONG HOÀN TOÀN thì mới fade-in hiện lên
+            imgElement.onload = function() {
+                imgElement.style.opacity = '1';
+            };
+
+            // 5. Bắt đầu gán link để tải ảnh mới (Gán sau cùng để kích hoạt trigger onload)
+            imgElement.src = data.img;
         }
 
         function closePreview() {
