@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Portfolio | Nguyễn Thanh Hải</title>
+    <title>Portfolio | Nguyen Thanh Hai</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio cá nhân của Nguyễn Thanh Hải - Sinh viên An ninh mạng đam mê kiểm thử xâm nhập và nhiếp ảnh bán chuyên.">
-    <meta name="keywords" content="Nguyễn Thanh Hải, Portfolio, An ninh mạng, Cyber Security, Nhiếp ảnh, Photography">
-    <meta name="author" content="Nguyễn Thanh Hải">
+    <meta name="description" content="Personal portfolio of Nguyen Thanh Hai - Cybersecurity student passionate about penetration testing and semi-professional photography.">
+    <meta name="keywords" content="Nguyen Thanh Hai, Portfolio, Cyber Security, Photography, Penetration Testing">
+    <meta name="author" content="Nguyen Thanh Hai">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hatmuoingot.github.io/Introduce_Myself/">
-    <meta property="og:title" content="Portfolio | Nguyễn Thanh Hải">
-    <meta property="og:description" content="Sinh viên An ninh mạng & Nhiếp ảnh bán chuyên">
+    <meta property="og:title" content="Portfolio | Nguyen Thanh Hai">
+    <meta property="og:description" content="Cybersecurity Student & Semi-professional Photographer">
     <meta property="og:image" content="https://hatmuoingot.github.io/Introduce_Myself/images/fb_preview.jpg">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
@@ -35,15 +35,15 @@
         <div class="menu-left">
             <span class="apple-icon"></span>
             <nav class="nav-links">
-                <a href="#hero" class="nav-item">Giới thiệu</a>
-                <a href="#cyber" class="nav-item">Ngành học & Công Việc</a>
-                <a href="#photo" class="nav-item">Nhiếp ảnh</a>
-                <a href="#contact" class="nav-item">Liên hệ</a>
+                <a href="#hero" class="nav-item">About</a>
+                <a href="#cyber" class="nav-item">Career & Work</a>
+                <a href="#photo" class="nav-item">Photography</a>
+                <a href="#contact" class="nav-item">Contact</a>
             </nav>
         </div>
         <div class="menu-right">
             <div class="lang-switcher">
-                <span class="active">VN</span> <span class="divider">|</span> <a href="index-en.html">EN</a>
+                <a href="index.html">VN</a> <span class="divider">|</span> <span class="active">EN</span>
             </div>
             <span class="time-display" id="clock">13:37</span>
         </div>
@@ -52,36 +52,39 @@
     <header class="ios-mobile-header hide-on-desktop">
         <div class="header-content">
             <span class="brand-name">Portfolio</span>
-            <button class="menu-trigger" id="mobile-menu-btn" aria-label="Mở menu">
+            <button class="menu-trigger" id="mobile-menu-btn" aria-label="Open menu">
                 <div class="burger-lines"></div>
             </button>
         </div>
         <nav class="mobile-glass-menu" id="mobile-nav">
-            <a href="#hero" class="mobile-nav-item">Trang chủ</a>
-            <a href="#cyber" class="mobile-nav-item">Ngành học & Công Việc</a>
-            <a href="#photo" class="mobile-nav-item">Nhiếp ảnh</a>
-            <a href="#contact" class="mobile-nav-item">Liên hệ</a>
+            <a href="#hero" class="mobile-nav-item">Home</a>
+            <a href="#cyber" class="mobile-nav-item">Career & Work</a>
+            <a href="#photo" class="mobile-nav-item">Photography</a>
+            <a href="#contact" class="mobile-nav-item">Contact</a>
+            <div class="mobile-lang-switcher">
+                <a href="index.html">VN</a> <span class="divider">|</span> <span class="active">EN</span>
+            </div>
         </nav>
     </header>
 
     <section id="hero" class="hero-section">
         <div class="hero-glass-card">
-            <span class="hero-greeting">Xin chào, tôi là</span>
-            <h1 class="hero-name">Nguyễn Thanh Hải</h1>
+            <span class="hero-greeting">Hello, I am</span>
+            <h1 class="hero-name">Nguyen Thanh Hai</h1>
             <div class="hero-description">
-                <span>Sinh viên An ninh mạng</span>
+                <span>Cybersecurity Student</span>
                 <span class="divider-dot">•</span>
-                <span>Nhiếp ảnh bán chuyên</span>
+                <span>Semi-pro Photographer</span>
             </div>
         </div>
         <div class="hero-scroll-hint">
             <div class="mouse-icon"></div>
-            <span>Cuộn để khám phá</span>
+            <span>Scroll to explore</span>
         </div>
 
         <!-- Vinyl Player -->
-        <div class="vinyl-player" id="vinyl-player" title="Phát/Tạm dừng nhạc" onclick="toggleMusic()">
-            <div class="vinyl-tooltip">Chán thì nghe xíu nhạc nhó :3</div>
+        <div class="vinyl-player" id="vinyl-player" title="Play/Pause music" onclick="toggleMusic()">
+            <div class="vinyl-tooltip">Bored? Listen to some music :3</div>
             <div class="vinyl-record">
                 <div class="vinyl-center"></div>
             </div>
@@ -106,13 +109,13 @@
                 <section id="cyber" class="content-block">
                     <div class="profile-layout">
                         <div class="profile-avatar">
-                            <img src="./images/IMG_9474.jpeg" alt="Avatar Nguyễn Thanh Hải">
+                            <img src="./images/IMG_9474.jpeg" alt="Nguyen Thanh Hai Avatar">
                         </div>
                         <div class="typography-header">
-                            <span class="accent-badge">Lộ trình chuyên môn</span>
-                            <h2 class="section-title">An ninh mạng & Phòng thủ số</h2>
+                            <span class="accent-badge">Professional Pathway</span>
+                            <h2 class="section-title">Cyber Security & Digital Defense</h2>
                             <p class="section-subtitle">
-                                Tôi là một sinh viên an ninh mạng với niềm đam mê về ethical hacking và bảo vệ số. Tôi có kinh nghiệm thực tế trong kiểm thử xâm nhập, đánh giá lỗ hổng và bảo mật mạng. Mục tiêu của tôi là bảo vệ tài sản số và đóng góp vào môi trường trực tuyến an toàn hơn.
+                                I am a cybersecurity student with a passion for ethical hacking and digital protection. I have practical experience in penetration testing, vulnerability assessment, and network security. My goal is to protect digital assets and contribute to a safer online environment.
                             </p>
                         </div>
                     </div>
@@ -122,12 +125,12 @@
 
                 <section id="skills" class="content-block">
                     <div class="typography-header">
-                        <span class="accent-badge">Công cụ & Công nghệ</span>
-                        <h2 class="section-title">Kỹ năng Chuyên môn</h2>
+                        <span class="accent-badge">Tools & Technologies</span>
+                        <h2 class="section-title">Professional Skills</h2>
                     </div>
                     <div class="skills-grid">
                         <div class="skill-category">
-                            <h3 class="skill-category-title">Bảo mật & Pentest</h3>
+                            <h3 class="skill-category-title">Security & Pentest</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Burp Suite</span>
                                 <span class="skill-tag">Nmap</span>
@@ -137,7 +140,7 @@
                             </div>
                         </div>
                         <div class="skill-category">
-                            <h3 class="skill-category-title">Hệ thống & Lập trình</h3>
+                            <h3 class="skill-category-title">Systems & Programming</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Linux / Unix</span>
                                 <span class="skill-tag">Python</span>
@@ -153,28 +156,28 @@
 
                 <section id="education" class="content-block">
                     <div class="typography-header">
-                        <span class="accent-badge">Quá trình đào tạo</span>
-                        <h2 class="section-title">Học vấn & Chứng chỉ</h2>
+                        <span class="accent-badge">Education Path</span>
+                        <h2 class="section-title">Education & Certificates</h2>
                     </div>
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-icon">🎓</div>
                             <div class="timeline-content">
-                                <span class="timeline-date-pill">2022 - Hiện tại</span>
-                                <h3 class="timeline-title">Cử nhân An ninh mạng</h3>
-                                <p class="timeline-subtitle">Đại học Thủy Lợi - TLA</p>
-                                <p class="timeline-desc">Tập trung vào mảng bảo mật hệ thống, mật mã học và kiểm thử xâm nhập. Tham gia các hoạt động CTF nội bộ và mở rộng.</p>
+                                <span class="timeline-date-pill">2022 - Present</span>
+                                <h3 class="timeline-title">Bachelor of Cyber Security</h3>
+                                <p class="timeline-subtitle">Thuyloi University - TLA</p>
+                                <p class="timeline-desc">Focusing on system security, cryptography, and penetration testing. Participating in internal and external CTF activities.</p>
                             </div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-icon">💻</div>
                             <div class="timeline-content">
-                                <span class="timeline-date-pill">Tự học & Thực hành</span>
-                                <h3 class="timeline-title">Project</h3>
-                                <p class="timeline-subtitle">Nền tảng đào tạo An ninh mạng</p>
-                                <p class="timeline-desc">Thực hành leo rủi ro, khai thác lỗ hổng web và mạng trên các môi trường giả lập thực tế.</p>
-                                <p class="timeline-desc">Triển khai một hệ thống IDPS tích hợp tường lửa thế hệ mới(thử nghiệm).</p>
-                                <p class="timeline-desc">Lập trình một web portfolio cho bản thân.</p>
+                                <span class="timeline-date-pill">Self-study & Practice</span>
+                                <h3 class="timeline-title">Projects</h3>
+                                <p class="timeline-subtitle">Cyber Security Training Platform</p>
+                                <p class="timeline-desc">Practicing privilege escalation, web and network vulnerability exploitation in simulated realistic environments.</p>
+                                <p class="timeline-desc">Deploying an IDPS system integrated with a next-generation firewall (experimental).</p>
+                                <p class="timeline-desc">Developing a personal web portfolio.</p>
                             </div>
                         </div>
                     </div>
@@ -184,10 +187,10 @@
 
                 <section id="photo" class="content-block">
                     <div class="typography-header">
-                        <span class="accent-badge">Ống kính sáng tạo</span>
-                        <h2 class="section-title">Nhiếp ảnh & Khoảnh khắc</h2>
+                        <span class="accent-badge">Creative Lens</span>
+                        <h2 class="section-title">Photography & Moments</h2>
                         <p class="section-subtitle">
-                            Ngắm nhìn thế giới qua đôi mắt và lưu giữ từng kỉ niệm ...
+                            Seeing the world through my eyes and preserving every memory...
                         </p>
                     </div>
 
@@ -197,13 +200,13 @@
                                 <div class="stack-layer layer-3"></div>
                                 <div class="stack-layer layer-2"></div>
                                 <div class="stack-layer layer-1">
-                                    <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/646042858_2925813187608595_7360797779767465871_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFlk5dbajr1vbF3qIeLFSHJkBnOqiaxM0eQGc6qJrEzR0md8mAp1hAc6nkYFCj-egrQDpnOFkDI55b41b9ED2lY&_nc_ohc=SkVjPoMjb0sQ7kNvwEc5D0X&_nc_oc=Ado0zEXu99BQ5vr_LfjErsRDEJmvTbx7vTN3O3mO08zvtWc-x_XpWRZO6nO8U_pvkeg&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=s_7neaB--5TiVkKlcYpZTA&_nc_ss=7b2a8&oh=00_Af5m9Uswt_xQ8IH2s-TcFf9I85gwitvNDIXMSEuumlFiJw&oe=6A021123" alt="Hồ sơ Facebook">
+                                    <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/646042858_2925813187608595_7360797779767465871_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFlk5dbajr1vbF3qIeLFSHJkBnOqiaxM0eQGc6qJrEzR0md8mAp1hAc6nkYFCj-egrQDpnOFkDI55b41b9ED2lY&_nc_ohc=SkVjPoMjb0sQ7kNvwEc5D0X&_nc_oc=Ado0zEXu99BQ5vr_LfjErsRDEJmvTbx7vTN3O3mO08zvtWc-x_XpWRZO6nO8U_pvkeg&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=s_7neaB--5TiVkKlcYpZTA&_nc_ss=7b2a8&oh=00_Af5m9Uswt_xQ8IH2s-TcFf9I85gwitvNDIXMSEuumlFiJw&oe=6A021123" alt="Facebook Profile">
                                     <div class="platform-icon fb">f</div>
                                 </div>
                             </div>
                             <div class="album-meta">
-                                <h3 class="album-name">Một vài bức ảnh từ "mẫu quen" ;)))</h3>
-                                <p class="album-details">Chân dung</p>
+                                <h3 class="album-name">A few photos from a "familiar model" ;)))</h3>
+                                <p class="album-details">Portrait</p>
                             </div>
                         </div>
 
@@ -212,7 +215,7 @@
                                 <div class="stack-layer layer-3"></div>
                                 <div class="stack-layer layer-2"></div>
                                 <div class="stack-layer layer-1">
-                                    <img src="./images/tiktok1.JPG" alt="Hình ảnh TikTok">
+                                    <img src="./images/tiktok1.JPG" alt="TikTok Image">
                                     <div class="platform-icon tt" aria-hidden="true">
                                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M12 2v7.5c0 1.4-1.1 2.5-2.5 2.5S7 10.9 7 9.5 8.1 7 9.5 7h2.5V2H12z" fill="#69C9D0"/>
@@ -224,7 +227,7 @@
                             </div>
                             <div class="album-meta">
                                 <h3 class="album-name">TikTok</h3>
-                                <p class="album-details">Post mình chụp được nhiều view nhất</p>
+                                <p class="album-details">My most viewed post</p>
                             </div>
                         </div>
 
@@ -233,13 +236,13 @@
                                 <div class="stack-layer layer-3"></div>
                                 <div class="stack-layer layer-2"></div>
                                 <div class="stack-layer layer-1">
-                                    <img src="https://github.com/Hatmuoingot/Introduce_Myself/blob/main/images/IMG_9345.PNG?raw=true" alt="Nhiếp ảnh tự do">
+                                    <img src="https://github.com/Hatmuoingot/Introduce_Myself/blob/main/images/IMG_9345.PNG?raw=true" alt="Freestyle photography">
                                     <div class="platform-icon misc">📷</div>
                                 </div>
                             </div>
                             <div class="album-meta">
-                                <h3 class="album-name">Khoảnh khắc tự do</h3>
-                                <p class="album-details">Khoảnh khắc tự do</p>
+                                <h3 class="album-name">Freestyle moments</h3>
+                                <p class="album-details">Freestyle moments</p>
                             </div>
                         </div>
                     </div>
@@ -251,8 +254,8 @@
     <footer class="contact-footer" id="contact">
         <div class="contact-container">
             <div class="contact-header">
-                <h2>Liên hệ với tôi</h2>
-                <p>Hãy kết nối qua các nền tảng sau</p>
+                <h2>Contact Me</h2>
+                <p>Let's connect on these platforms</p>
             </div>
 
             <div class="contact-grid">
@@ -281,12 +284,12 @@
                 <a href="mailto:bomnguyen879@gmail.com" class="contact-card">
                     <div class="contact-icon">✉️</div>
                     <h3>Email</h3>
-                    <p>Hải Nguyễn</p>
+                    <p>Hai Nguyen</p>
                 </a>
             </div>
 
             <div class="footer-credit">
-                <p>&copy; 2026 Nguyễn Thanh Hải. Tất cả quyền được bảo lưu.</p>
+                <p>&copy; 2026 Nguyen Thanh Hai. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -297,13 +300,13 @@
             <div class="preview-body">
                 <div class="preview-image-container">
                     <div id="preview-spinner" class="preview-spinner"></div>
-                    <img src="" id="target-preview-img" alt="Xem trước lớn">
+                    <img src="" id="target-preview-img" alt="Large preview">
                 </div>
                 <div class="preview-info-panel">
-                    <h2 id="target-title">Tên Album</h2>
-                    <p id="target-desc">Mô tả chi tiết.</p>
+                    <h2 id="target-title">Album Name</h2>
+                    <p id="target-desc">Detailed description.</p>
                     <a href="#" id="target-link" target="_blank" class="visit-social-btn">
-                        Mở liên kết <span class="arrow">→</span>
+                        Open link <span class="arrow">→</span>
                     </a>
                 </div>
             </div>
@@ -312,4 +315,4 @@
 
     <script src="./js/main.js"></script>
 </body>
-</html></html>
+</html>

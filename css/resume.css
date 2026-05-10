@@ -1,0 +1,257 @@
+/* =========================================
+   Resume / Skills & Education Styles
+   ========================================= */
+
+/* Profile Layout */
+.profile-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .profile-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+.profile-avatar {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(105, 201, 208, 0.5);
+    box-shadow: 0 0 20px rgba(105, 201, 208, 0.2);
+    background-color: rgba(255, 255, 255, 0.05); /* Placeholder background */
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-layout .typography-header {
+    flex-grow: 1;
+}
+
+/* Hero Action (Download CV Button) */
+.hero-action {
+    margin-top: 2rem;
+    animation: fadeUp 1s ease 0.6s forwards;
+    opacity: 0;
+}
+
+.btn-download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary, #fff);
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-download-cv:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category-title {
+    font-size: 1.1rem;
+    color: var(--text-primary, #fff);
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary, rgba(255,255,255,0.8));
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(105, 201, 208, 0.15); /* Subtle cyan tint */
+    color: #fff;
+    border-color: rgba(105, 201, 208, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Enhanced Education Timeline */
+.timeline {
+    position: relative;
+    margin-top: 2rem;
+    padding-left: 2.5rem; /* Increased padding for larger icons */
+}
+
+/* Gradient Timeline Line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.9rem; /* Center exactly behind the icon */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(105, 201, 208, 0.8), rgba(255, 255, 255, 0.1) 80%);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+/* Visual Anchors (Icons instead of dots) */
+.timeline-icon {
+    position: absolute;
+    left: -2.5rem; /* Align perfectly with padding-left of timeline */
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(20, 20, 20, 0.8);
+    border: 2px solid rgba(105, 201, 208, 0.6); /* Cyan border */
+    box-shadow: 0 0 15px rgba(105, 201, 208, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    z-index: 2; /* Keep above the line */
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.timeline-item:hover .timeline-icon {
+    border-color: #69C9D0;
+    box-shadow: 0 0 20px rgba(105, 201, 208, 0.5);
+    transform: scale(1.1);
+}
+
+/* Timeline Cards with Glass & Glow Effect */
+.timeline-content {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-item:hover .timeline-content {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(105, 201, 208, 0.3); /* Subtle cyan border on hover */
+    transform: translateX(5px); /* Slide slightly to the right */
+    box-shadow: -5px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Subtle glow behind card on hover */
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at left top, rgba(105, 201, 208, 0.1), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.timeline-item:hover .timeline-content::before {
+    opacity: 1;
+}
+
+/* Distinct Date Pill */
+.timeline-date-pill {
+    display: inline-block;
+    background: rgba(105, 201, 208, 0.15); /* Tinted background */
+    color: var(--accent, #69C9D0);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(105, 201, 208, 0.2);
+}
+
+.timeline-title {
+    font-size: 1.3rem;
+    color: var(--text-primary, #fff);
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.timeline-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-secondary, rgba(255,255,255,0.7));
+    margin-bottom: 0.8rem;
+    font-style: italic;
+}
+
+.timeline-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary, rgba(255,255,255,0.8));
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
