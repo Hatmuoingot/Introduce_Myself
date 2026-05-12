@@ -6,6 +6,15 @@ menuBtn.addEventListener('click', () => {
     mobileNav.classList.toggle('is-visible');
 });
 
+// Đóng menu khi click vào một item trong menu
+const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+mobileNavItems.forEach(item => {
+    item.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        mobileNav.classList.remove('is-visible');
+    });
+});
+
 // Logic phát nhạc Đĩa than
 function toggleMusic() {
     const audio = document.getElementById('bg-music');

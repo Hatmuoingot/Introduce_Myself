@@ -88,7 +88,8 @@
 
 /* Language Switcher */
 .menu-right { display: flex; align-items: center; gap: 16px; }
-.lang-switcher, .mobile-lang-switcher {
+.mobile-header-right { display: flex; align-items: center; gap: 12px; }
+.lang-switcher {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -98,25 +99,18 @@
     font-size: 13px;
     font-weight: 500;
 }
-.mobile-lang-switcher {
-    margin: 16px;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.04);
-    padding: 12px;
-    font-size: 16px;
-}
-.lang-switcher a, .mobile-lang-switcher a {
+.lang-switcher a {
     color: var(--text-secondary);
     transition: color 0.2s ease;
     text-decoration: none;
 }
-.lang-switcher a:hover, .mobile-lang-switcher a:hover {
+.lang-switcher a:hover {
     color: var(--text-primary);
 }
-.lang-switcher .active, .mobile-lang-switcher .active {
+.lang-switcher .active {
     color: var(--text-primary);
     font-weight: 600;
 }
-.lang-switcher .divider, .mobile-lang-switcher .divider {
+.lang-switcher .divider {
     color: rgba(255, 255, 255, 0.2);
 }
